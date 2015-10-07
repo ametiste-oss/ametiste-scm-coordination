@@ -1,0 +1,1 @@
+# ametiste-scm-coordination
