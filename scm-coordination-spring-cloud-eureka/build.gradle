@@ -1,0 +1,12 @@
+description = 'SCM Coordinator based on Spring Cloud Eureka'
+
+apply plugin: 'groovy'
+
+dependencies {
+    compile project(":scm-coordination-core")
+
+    compile libraries.commonLang3
+    compile libraries.springCloudEureka
+
+    testCompile libraries.spock
+}

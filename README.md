@@ -1,1 +1,1 @@
-# ametiste-scm-coordination
+# Ametiste SCM Coordination Library

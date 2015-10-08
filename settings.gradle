@@ -1,0 +1,4 @@
+rootProject.name = 'ametiste-scm-coordination'
+
+include 'scm-coordination-core'
+include 'scm-coordination-spring-cloud-eureka'

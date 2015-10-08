@@ -1,0 +1,16 @@
+.*
+!.gitignore
+!.travis.yml
+*.class
+*.war
+bin/
+classes/
+target/
+target/*
+build/*
+build/
+/build
+*.ipr
+*.iml
+*.log
+gradle.properties
