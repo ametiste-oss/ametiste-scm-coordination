@@ -1,1 +1,3 @@
 description = 'SCM Coordination Core Module'
+
+apply from: "https://raw.githubusercontent.com/ametiste-oss/ametiste-bintray-gradle/master/bintray.gradle"

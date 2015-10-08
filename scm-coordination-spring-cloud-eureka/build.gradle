@@ -1,6 +1,7 @@
 description = 'SCM Coordinator based on Spring Cloud Eureka'
 
 apply plugin: 'groovy'
+apply from: "https://raw.githubusercontent.com/ametiste-oss/ametiste-bintray-gradle/master/bintray.gradle"
 
 dependencies {
     compile project(":scm-coordination-core")
