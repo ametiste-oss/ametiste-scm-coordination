@@ -66,7 +66,7 @@ repository {
 }
 
 dependencies {
-  compile "org.ametiste.scm:scm-coordination-spring-cloud-eureka:{version}
+  compile "org.ametiste.scm:scm-coordination-spring-cloud-eureka:{version}"
 }
 ```
 
