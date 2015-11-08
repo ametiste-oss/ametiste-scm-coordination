@@ -1,7 +1,10 @@
 # SCM Coordination Library
 
+Link to umbrella project: [>> System's Configuration Management <<](https://github.com/ametiste-oss/ametiste-scm)
+
 ## Build Status
 [![Build Status](https://travis-ci.org/ametiste-oss/ametiste-scm-coordination.svg?branch=master)](https://travis-ci.org/ametiste-oss/ametiste-scm-coordination)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/2f63ae93833b47d5af2dca3c026a81ee)](https://www.codacy.com/app/Ametiste-OSS/ametiste-scm-coordination)
 [![codecov.io](https://codecov.io/github/ametiste-oss/ametiste-scm-coordination/coverage.svg?branch=master&precision=2)](https://codecov.io/github/ametiste-oss/ametiste-scm-coordination?branch=master)
 
 ## Table Of Content
