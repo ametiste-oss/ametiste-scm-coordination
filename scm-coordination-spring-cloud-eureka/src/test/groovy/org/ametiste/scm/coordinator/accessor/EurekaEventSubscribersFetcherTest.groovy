@@ -40,6 +40,14 @@ class EurekaEventSubscribersFetcherTest extends Specification {
         fetcher = new EurekaEventSubscribersFetcher(client);
     }
 
+    def "arguments validation on creation"() {
+        when: "try create fetcher with not initialized discovery client"
+        new EurekaEventSubscribersFetcher(null)
+
+        then: "expect IllegalArgumentException thrown"
+        thrown(IllegalArgumentException.class)
+    }
+
     def "fetcher should return empty list when no registered subscribers"() {
         given: "applications list without subscribers"
         Application app1 = new Application("discoveryApps");
