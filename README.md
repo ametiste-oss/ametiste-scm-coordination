@@ -6,6 +6,7 @@ Link to umbrella project: [>> System's Configuration Management <<](https://gith
 [![Build Status](https://travis-ci.org/ametiste-oss/ametiste-scm-coordination.svg?branch=master)](https://travis-ci.org/ametiste-oss/ametiste-scm-coordination)
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/2f63ae93833b47d5af2dca3c026a81ee)](https://www.codacy.com/app/Ametiste-OSS/ametiste-scm-coordination)
 [![codecov.io](https://codecov.io/github/ametiste-oss/ametiste-scm-coordination/coverage.svg?branch=master&precision=2)](https://codecov.io/github/ametiste-oss/ametiste-scm-coordination?branch=master)
+[ ![Download](https://api.bintray.com/packages/ametiste-oss/maven/scm-coordination-spring-cloud-eureka/images/download.svg) ](https://bintray.com/ametiste-oss/maven/scm-coordination-spring-cloud-eureka/_latestVersion)
 
 ## Table Of Content
 
@@ -73,10 +74,22 @@ dependencies {
 }
 ```
 
+If you design SpringBoot application starters usage prefer:
+```groovy
+repository {
+  jcenter()
+}
+
+dependencies {
+  compile "org.ametiste.scm:scm-coordination-fetcher-starter:{version}"
+  compile "org.ametiste.scm:scm-coordination-subscriber-starter:{version}"
+}
+```
+
 #### Subscribing to Event Broadcast
 To subscribe to event broadcasting you need:
 
-* Import *ScmEventSubscriberConfiguration* configuration class to app context.
+* Import *ScmEventSubscriberConfiguration* configuration class to app context or add starter module **scm-coordination-subscriber-starter.jar** to project dependencies.
 ```java
 @Configuration
 @EnableAutoConfiguration
@@ -112,7 +125,7 @@ This is all you need to integrate subscribing mechanism with Eureka.
 
 To integrate subscriber fetcher you need:
 
-* Import *ScmSubscribersFetcherConfiguration* configuration class to app context.
+* Import *ScmSubscribersFetcherConfiguration* configuration class to app context or add starter module **scm-coordination-fetcher-starter.jar** to project dependencies.
 ```java
 @Configuration
 @EnableAutoConfiguration
