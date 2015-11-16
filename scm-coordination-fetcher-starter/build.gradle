@@ -1,0 +1,7 @@
+description = 'SCM Subscribers Fetcher SpringBoot Starter'
+
+apply from: "https://raw.githubusercontent.com/ametiste-oss/ametiste-bintray-gradle/master/bintray.gradle"
+
+dependencies {
+    compile project(path: ":scm-coordination-spring-cloud-eureka")
+}
